@@ -24,7 +24,7 @@ class APIFeatures {
     let queryStr = JSON.stringify(queryObj);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
     queryStr = JSON.parse(queryStr);
-    console.log(this.queryString, queryStr);
+
     //the actualy querystring is ?difficulty[gt]=easy&page=1
     //tyhe node provides this query string as follows
     //{ difficulty: { gt: 'easy' }, page: '1' }

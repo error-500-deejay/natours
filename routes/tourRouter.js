@@ -40,7 +40,6 @@ router
   );
 
 router.param('id', (req, res, next, id) => {
-  console.log(`the Id is ${id}`);
   next();
 });
 
